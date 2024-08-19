@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Web Summarizer AI",
+  "version": "1.0",
+  "description": "A Chrome extension that uses AI to summarize webpages.",
+  "icons": {
+    "128": "icon128.png"
+  },
+  "host_permissions": [
+    "*://api.example.com/"
+  ],
+  "permissions": [
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "minimum_chrome_version": "92",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "run_at": "document_end",
+      "js": ["content.js"],
+     
+      "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+    }
+  ],
+  "action": {
+    "default_icon": "icon128.png",
+    "default_title": "Web Content Summarizer",
+    "default_popup": "popup.html"
+  }
+  
+}

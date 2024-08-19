@@ -1,0 +1,48 @@
+{
+  "name": "web-summarizer-ai",
+  "version": "1.0.0",
+  "description": "Web Page Content Summarizer Using Ai",
+  "private": true,
+  "scripts": {
+    "dev": "webpack --watch --progress --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@inboxsdk/core": "^1.1.5",
+    "@react-oauth/google": "^0.11.0",
+    "@sanity/client": "^6.1.5",
+    "@sanity/image-url": "^1.0.2",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
+    "dotenv": "^16.3.1",
+    "jwt-decode": "^3.1.2",
+    "mdb-react-ui-kit": "^6.1.0",
+    "os-browserify": "^0.3.0",
+    "path-browserify": "^1.0.1",
+    "react": "^18.2.0",
+    "react-cookie": "^4.1.1",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.14.1",
+    "stream-browserify": "^3.0.0",
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.235",
+    "@types/react": "^18.2.6",
+    "@types/react-dom": "^18.2.4",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.1",
+    "install": "^0.13.0",
+    "style-loader": "^3.3.2",
+    "webpack": "^5.82.0",
+    "webpack-cli": "^5.1.1",
+    "webpack-merge": "^5.8.0"
+  }
+}
